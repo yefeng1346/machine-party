@@ -21,3 +21,37 @@ if (toggle && nav) {
 document.querySelectorAll('[data-year]').forEach((item) => {
   item.textContent = new Date().getFullYear();
 });
+
+const achievementChecks = [...document.querySelectorAll('[data-achievement-check]')];
+
+if (achievementChecks.length) {
+  const storageKey = 'machine-party-achievement-progress';
+  let saved = [];
+
+  try {
+    saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
+  } catch {
+    saved = [];
+  }
+
+  const updateProgress = () => {
+    const completed = achievementChecks.filter((check) => check.checked);
+    document.querySelectorAll('[data-achievement-count]').forEach((item) => {
+      item.textContent = String(completed.length);
+    });
+    achievementChecks.forEach((check) => {
+      check.closest('.achievement-card')?.classList.toggle('completed', check.checked);
+    });
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(completed.map((check) => check.value)));
+    } catch {
+      // The checklist still works for this visit when storage is unavailable.
+    }
+  };
+
+  achievementChecks.forEach((check) => {
+    check.checked = saved.includes(check.value);
+    check.addEventListener('change', updateProgress);
+  });
+  updateProgress();
+}

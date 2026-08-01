@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Machine Party Wiki</title>
+  <desc id="desc">Industrial green and black title card for the unofficial Machine Party player guide.</desc>
+  <rect width="1200" height="630" fill="#171815"/>
+  <g opacity=".16" stroke="#e8e5dc" stroke-width="1">
+    <path d="M0 70h1200M0 140h1200M0 210h1200M0 280h1200M0 350h1200M0 420h1200M0 490h1200M0 560h1200"/>
+    <path d="M70 0v630M140 0v630M210 0v630M280 0v630M350 0v630M420 0v630M490 0v630M560 0v630M630 0v630M700 0v630M770 0v630M840 0v630M910 0v630M980 0v630M1050 0v630M1120 0v630"/>
+  </g>
+  <circle cx="1080" cy="80" r="245" fill="none" stroke="#d8ff37" stroke-width="70" opacity=".12"/>
+  <rect x="82" y="78" width="40" height="40" fill="none" stroke="#d8ff37" stroke-width="4" transform="rotate(45 102 98)"/>
+  <rect x="94" y="90" width="16" height="16" fill="#d8ff37" transform="rotate(45 102 98)"/>
+  <text x="82" y="206" fill="#d8ff37" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="7">UNOFFICIAL PLAYER FIELD MANUAL</text>
+  <text x="76" y="356" fill="#e8e5dc" font-family="Arial Narrow, Arial, sans-serif" font-size="112" font-weight="900" letter-spacing="-4">MACHINE PARTY</text>
+  <text x="80" y="464" fill="#e8e5dc" font-family="Arial Narrow, Arial, sans-serif" font-size="112" font-weight="900" letter-spacing="-4">WIKI</text>
+  <rect x="82" y="520" width="225" height="10" fill="#ed432e"/>
+  <text x="82" y="578" fill="#aaa99f" font-family="monospace" font-size="25">MINIGAMES / CONTROLS / MULTIPLAYER / FIXES</text>
+</svg>

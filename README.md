@@ -6,11 +6,16 @@ An unofficial English-language guide site for **Machine Party**, covering miniga
 
 - Home
 - Minigames
+- Achievements and saved browser checklist
 - How to Play
-- Multiplayer
-- Fixes
+- Multiplayer, invites, local co-op status, and matchmaking
+- Fixes, controller troubleshooting, crashes, and Vulkan
+- Steam Deck and Linux
 - Tips & Lore
 - FAQ
+- About, editorial policy, and source directory
+
+The production site is available at <https://machine-party.wiki/>.
 
 ## Run locally
 
