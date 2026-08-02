@@ -1,0 +1,43 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/minigames/index.html", "destination": "/minigames/", "permanent": true },
+    { "source": "/achievements/index.html", "destination": "/achievements/", "permanent": true },
+    { "source": "/how-to-play/index.html", "destination": "/how-to-play/", "permanent": true },
+    { "source": "/multiplayer/index.html", "destination": "/multiplayer/", "permanent": true },
+    { "source": "/multiplayer/invite-friends/index.html", "destination": "/multiplayer/invite-friends/", "permanent": true },
+    { "source": "/multiplayer/local-coop/index.html", "destination": "/multiplayer/local-coop/", "permanent": true },
+    { "source": "/multiplayer/matchmaking/index.html", "destination": "/multiplayer/matchmaking/", "permanent": true },
+    { "source": "/fixes/index.html", "destination": "/fixes/", "permanent": true },
+    { "source": "/fixes/controller-not-working/index.html", "destination": "/fixes/controller-not-working/", "permanent": true },
+    { "source": "/fixes/crashing-vulkan/index.html", "destination": "/fixes/crashing-vulkan/", "permanent": true },
+    { "source": "/steam-deck/index.html", "destination": "/steam-deck/", "permanent": true },
+    { "source": "/tips/index.html", "destination": "/tips/", "permanent": true },
+    { "source": "/faq/index.html", "destination": "/faq/", "permanent": true },
+    { "source": "/about/index.html", "destination": "/about/", "permanent": true },
+    { "source": "/editorial-policy/index.html", "destination": "/editorial-policy/", "permanent": true },
+    { "source": "/sources/index.html", "destination": "/sources/", "permanent": true },
+    { "source": "/privacy/index.html", "destination": "/privacy/", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/sw.js",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, max-age=0, must-revalidate" },
+        { "key": "Service-Worker-Allowed", "value": "/" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    }
+  ]
+}

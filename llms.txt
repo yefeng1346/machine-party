@@ -20,6 +20,7 @@ Machine Party Wiki prioritizes direct answers, official Steam and developer sour
 - [About](https://machine-party.wiki/about/)
 - [Editorial policy](https://machine-party.wiki/editorial-policy/)
 - [Sources](https://machine-party.wiki/sources/)
+- [Privacy](https://machine-party.wiki/privacy/)
 
 ## Primary external source
 
