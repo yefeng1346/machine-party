@@ -477,6 +477,42 @@ kbd { display: inline-block; margin: 2px; border: 1px solid #74766f; border-bott
 .related-card strong { display: block; margin-bottom: 8px; font: 800 1.35rem var(--display); text-transform: uppercase; }
 .related-card span { font-size: 0.7rem; line-height: 1.5; }
 
+.ad-slot {
+  position: relative;
+  min-height: 270px;
+  margin: 64px 0 18px;
+  border: 1px solid var(--ink);
+  border-top: 7px solid var(--danger);
+  padding: 18px;
+  overflow: hidden;
+  background: rgba(245, 242, 233, 0.78);
+  contain: layout paint;
+}
+
+.ad-slot::after {
+  content: "EXT";
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  color: rgba(23, 24, 21, 0.22);
+  font: 800 1.4rem var(--display);
+  letter-spacing: 0.08em;
+  pointer-events: none;
+}
+
+.ad-slot__label {
+  margin: 0 0 16px;
+  color: #555851;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ad-slot__label span { color: var(--danger); }
+.ad-slot__body,
+.ad-slot__body > div { min-height: 210px; }
+
 .trust-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .trust-card { border-top: 6px solid var(--ink); padding: 22px; background: rgba(245, 242, 233, 0.72); }
 .trust-card h2, .trust-card h3 { font-size: 1.85rem; }
@@ -547,4 +583,6 @@ kbd { display: inline-block; margin: 2px; border: 1px solid #74766f; border-bott
   .control-table td::before { content: attr(data-label) ": "; color: #5b5d57; font-size: 0.65rem; font-weight: 600; text-transform: uppercase; }
   .footer-inner { grid-template-columns: 1fr; }
   .footer-links { justify-content: flex-start; }
+  .ad-slot { min-height: 340px; margin-top: 48px; padding: 14px; }
+  .ad-slot__body, .ad-slot__body > div { min-height: 282px; }
 }
