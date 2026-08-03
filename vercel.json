@@ -23,6 +23,15 @@
   ],
   "headers": [
     {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "machine-party.vercel.app" }
+      ],
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex" }
+      ]
+    },
+    {
       "source": "/sw.js",
       "headers": [
         { "key": "Cache-Control", "value": "no-store, max-age=0, must-revalidate" },
