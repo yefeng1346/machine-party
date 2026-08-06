@@ -8,7 +8,7 @@ An unofficial English-language guide site for **Machine Party**, covering miniga
 - Minigames
 - Achievements and saved browser checklist
 - How to Play
-- Multiplayer, invites, local co-op status, and matchmaking
+- Multiplayer, invites, local co-op and split-screen status, max players, and matchmaking
 - Fixes, controller troubleshooting, crashes, and Vulkan
 - Steam Deck and Linux
 - Tips & Lore

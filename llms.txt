@@ -11,6 +11,8 @@ Machine Party Wiki prioritizes direct answers, official Steam and developer sour
 - [Achievements](https://machine-party.wiki/achievements/): All 15 Steam unlock requirements and a local checklist.
 - [How to play](https://machine-party.wiki/how-to-play/): Controls, briefing behavior, room creation, and joining.
 - [Multiplayer](https://machine-party.wiki/multiplayer/): Private rooms, local-play status, invites, and matchmaking.
+- [Local co-op and split screen](https://machine-party.wiki/multiplayer/local-coop/): Couch co-op status, controller planning, split-screen uncertainty, and setup checklist.
+- [Max players](https://machine-party.wiki/max-players/): Confirmed online player cap, local status, and mod-support answer.
 - [Fixes](https://machine-party.wiki/fixes/): Conservative troubleshooting and bug-report guidance.
 - [Tips and lore](https://machine-party.wiki/tips/): Trial tactics and labeled Tartarus Engine theories.
 - [FAQ](https://machine-party.wiki/faq/): Short answers to common player questions.
