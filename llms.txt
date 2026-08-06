@@ -7,6 +7,7 @@ Machine Party Wiki prioritizes direct answers, official Steam and developer sour
 ## Core guides
 
 - [Homepage](https://machine-party.wiki/): Guide directory and current game status.
+- [Complete guide](https://machine-party.wiki/guide/): A focused directory for minigame rules, controls, multiplayer, fixes, tips, and FAQ answers.
 - [All minigames](https://machine-party.wiki/minigames/): The 15-trial roster with rules and win conditions.
 - [Achievements](https://machine-party.wiki/achievements/): All 15 Steam unlock requirements and a local checklist.
 - [How to play](https://machine-party.wiki/how-to-play/): Controls, briefing behavior, room creation, and joining.

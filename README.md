@@ -5,6 +5,7 @@ An unofficial English-language guide site for **Machine Party**, covering miniga
 ## Pages
 
 - Home
+- Complete guide hub
 - Minigames
 - Achievements and saved browser checklist
 - How to Play
