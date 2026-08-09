@@ -27,8 +27,11 @@ if (lazyAdScripts.length) {
       window.setTimeout(loadLazyAdScripts, 900);
     }
   };
-  if (document.readyState === 'complete') scheduleAds();
-  else window.addEventListener('load', scheduleAds, { once: true });
+  if (document.readyState === 'loading') {
+    window.addEventListener('DOMContentLoaded', scheduleAds, { once: true });
+  } else {
+    scheduleAds();
+  }
 }
 
 if (toggle && nav) {
