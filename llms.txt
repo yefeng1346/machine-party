@@ -7,14 +7,20 @@ Machine Party Wiki prioritizes direct answers, official Steam and developer sour
 ## Core guides
 
 - [Homepage](https://machine-party.wiki/): Guide directory and current game status.
-- [Complete guide](https://machine-party.wiki/guide/): A focused directory for minigame rules, controls, multiplayer, fixes, tips, and FAQ answers.
+- [Guide hub](https://machine-party.wiki/guide/): A focused directory for minigame rules, controls, multiplayer, fixes, tips, lore, and FAQ answers.
 - [All minigames](https://machine-party.wiki/minigames/): The 15-trial roster with rules and win conditions.
 - [Achievements](https://machine-party.wiki/achievements/): All 15 Steam unlock requirements and a local checklist.
 - [How to play](https://machine-party.wiki/how-to-play/): Controls, briefing behavior, room creation, and joining.
 - [Multiplayer](https://machine-party.wiki/multiplayer/): Private rooms, local-play status, invites, and matchmaking.
+- [Invite friends](https://machine-party.wiki/multiplayer/invite-friends/): Steam overlay invites, numeric room IDs, and recovery steps for expired or missing invitations.
 - [Local co-op and split screen](https://machine-party.wiki/multiplayer/local-coop/): Couch co-op status, controller planning, split-screen uncertainty, and setup checklist.
+- [Matchmaking](https://machine-party.wiki/multiplayer/matchmaking/): The current public-matchmaking answer, private rooms, and safe LFG options.
 - [Max players](https://machine-party.wiki/max-players/): Confirmed online player cap, local status, and mod-support answer.
 - [Fixes](https://machine-party.wiki/fixes/): Conservative troubleshooting and bug-report guidance.
+- [Online fix](https://machine-party.wiki/fixes/online-fix/): Supported Steam multiplayer troubleshooting; no unofficial executable or DLL downloads.
+- [Controller not working](https://machine-party.wiki/fixes/controller-not-working/): Steam Input, device order, and controller detection checks.
+- [Crashing and Vulkan](https://machine-party.wiki/fixes/crashing-vulkan/): Reversible launch, driver, Vulkan, and black-screen checks.
+- [Steam Deck and Linux](https://machine-party.wiki/steam-deck/): Native platform facts, Vulkan requirements, controller notes, and cautious handheld guidance.
 - [Tips and lore](https://machine-party.wiki/tips/): Trial tactics and labeled Tartarus Engine theories.
 - [FAQ](https://machine-party.wiki/faq/): Short answers to common player questions.
 

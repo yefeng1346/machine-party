@@ -1,6 +1,36 @@
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.site-nav');
 
+// Native ad injection is kept enabled, but it waits until the page has painted
+// and the browser is idle. AdSense remains in the vendor-recommended head
+// position for reliable account verification and monetization.
+const lazyAdScripts = [...document.querySelectorAll('script[data-lazy-ad-src]')];
+
+const loadLazyAdScripts = () => {
+  lazyAdScripts.forEach((placeholder) => {
+    if (placeholder.dataset.loaded === 'true') return;
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = placeholder.dataset.lazyAdSrc;
+    if (placeholder.dataset.cfasync === 'false') script.dataset.cfasync = 'false';
+    if (placeholder.dataset.crossorigin) script.crossOrigin = placeholder.dataset.crossorigin;
+    placeholder.dataset.loaded = 'true';
+    placeholder.replaceWith(script);
+  });
+};
+
+if (lazyAdScripts.length) {
+  const scheduleAds = () => {
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadLazyAdScripts, { timeout: 1800 });
+    } else {
+      window.setTimeout(loadLazyAdScripts, 900);
+    }
+  };
+  if (document.readyState === 'complete') scheduleAds();
+  else window.addEventListener('load', scheduleAds, { once: true });
+}
+
 if (toggle && nav) {
   toggle.addEventListener('click', () => {
     const open = nav.classList.toggle('open');

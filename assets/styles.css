@@ -512,6 +512,7 @@ kbd { display: inline-block; margin: 2px; border: 1px solid #74766f; border-bott
 .ad-slot__label span { color: var(--danger); }
 .ad-slot__body,
 .ad-slot__body > div { min-height: 210px; }
+.ad-slot__body { contain: layout paint; }
 
 .trust-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .trust-card { border-top: 6px solid var(--ink); padding: 22px; background: rgba(245, 242, 233, 0.72); }
@@ -566,6 +567,9 @@ kbd { display: inline-block; margin: 2px; border: 1px solid #74766f; border-bott
 }
 
 @media (max-width: 700px) {
+  /* Keep the mobile first paint light; the grid/noise is decorative, not content. */
+  body::before { display: none; }
+  .site-header { backdrop-filter: none; }
   h1 { font-size: clamp(3.6rem, 20vw, 6.2rem); }
   .page-hero h1 { font-size: clamp(3.1rem, 17vw, 5rem); }
   .hero-inner { min-height: auto; padding-bottom: 58px; }
