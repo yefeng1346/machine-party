@@ -1,6 +1,37 @@
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.site-nav');
 
+// Native Banner is loaded after the document is ready so the ad remains
+// monetized without competing with the first content paint.
+const lazyAdScripts = [...document.querySelectorAll('script[data-lazy-ad-src]')];
+
+const loadLazyAdScripts = () => {
+  lazyAdScripts.forEach((placeholder) => {
+    if (placeholder.dataset.loaded === 'true') return;
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = placeholder.dataset.lazyAdSrc;
+    if (placeholder.dataset.cfasync === 'false') script.dataset.cfasync = 'false';
+    placeholder.dataset.loaded = 'true';
+    placeholder.replaceWith(script);
+  });
+};
+
+if (lazyAdScripts.length) {
+  const scheduleAds = () => {
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadLazyAdScripts, { timeout: 1800 });
+    } else {
+      window.setTimeout(loadLazyAdScripts, 900);
+    }
+  };
+  if (document.readyState === 'loading') {
+    window.addEventListener('DOMContentLoaded', scheduleAds, { once: true });
+  } else {
+    scheduleAds();
+  }
+}
+
 if (toggle && nav) {
   toggle.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
