@@ -233,6 +233,11 @@ main { min-height: 70vh; }
   align-items: end;
 }
 
+.page-hero-inner > .reveal {
+  min-width: 0;
+  container-type: inline-size;
+}
+
 .eyebrow,
 .kicker {
   display: inline-flex;
@@ -264,7 +269,13 @@ h1 {
 }
 
 .hero h1 { font-size: clamp(4rem, 9vw, 8rem); }
-.page-hero h1 { font-size: clamp(3.6rem, 8vw, 7.2rem); }
+.page-hero h1 {
+  max-width: 100%;
+  font-size: clamp(3.6rem, 8vw, 7.2rem);
+  font-size: clamp(3.6rem, 11.5cqw, 7.2rem);
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
 
 .hero-tagline {
   margin: -8px 0 22px;
