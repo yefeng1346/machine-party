@@ -271,9 +271,11 @@ h1 {
 .hero h1 { font-size: clamp(4rem, 9vw, 8rem); }
 .page-hero h1 {
   max-width: 100%;
+  min-width: 0;
   font-size: clamp(3.6rem, 8vw, 7.2rem);
   font-size: clamp(3.6rem, 11.5cqw, 7.2rem);
   overflow-wrap: anywhere;
+  word-break: break-word;
   text-wrap: balance;
 }
 
