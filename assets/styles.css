@@ -500,6 +500,11 @@ kbd { display: inline-block; margin: 2px; border: 1px solid #74766f; border-bott
   contain: layout paint;
 }
 
+.ad-slot.ad-slot--top {
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
 .ad-slot::after {
   content: "EXT";
   position: absolute;

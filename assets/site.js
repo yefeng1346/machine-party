@@ -1,6 +1,16 @@
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.site-nav');
 
+// Run the ad experiment immediately after the hero so the slot can become
+// visible during the first page view instead of sitting below the full article.
+const adSlot = document.querySelector('main > .ad-slot');
+const contentWrap = document.querySelector('main > .content-wrap');
+
+if (adSlot && contentWrap) {
+  contentWrap.before(adSlot);
+  adSlot.classList.add('ad-slot--top');
+}
+
 // Native Banner is loaded after the document is ready so the ad remains
 // monetized without competing with the first content paint.
 const lazyAdScripts = [...document.querySelectorAll('script[data-lazy-ad-src]')];
