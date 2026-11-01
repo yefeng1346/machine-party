@@ -34,3 +34,11 @@ Machine Party Wiki prioritizes direct answers, official Steam and developer sour
 ## Primary external source
 
 - [Machine Party on Steam](https://store.steampowered.com/app/4108000/Machine_Party/)
+
+## Focused couch co-op and input guides
+
+- [Keyboard + controller](https://machine-party.wiki/multiplayer/keyboard-and-controller/): Set up two local players with one pad and one keyboard-and-mouse seat.
+- [Four-player couch setup](https://machine-party.wiki/multiplayer/four-player-couch-coop/): Prepare one PC, confirm every player seat, and test the TV before a full session.
+- [Second controller will not join](https://machine-party.wiki/fixes/second-controller-not-joining/): Compare each pad alone, then find why a Local player seat is missing.
+- [One pad controls two players](https://machine-party.wiki/fixes/controller-double-input/): Isolate repeated menu input, extra player seats, and mapping conflicts.
+- [Black screen at launch or intro](https://machine-party.wiki/fixes/black-screen/): Compare the official launch options and check the Local Original intro fix.

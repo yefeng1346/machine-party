@@ -434,6 +434,7 @@ h1 {
 .sidebar ol, .sidebar ul { padding-left: 20px; font-size: 0.75rem; }
 
 .prose-section { margin-bottom: 58px; }
+.prose-section[id] { scroll-margin-top: 100px; }
 .prose-section h2 { margin-bottom: 22px; font-size: clamp(2.5rem, 5vw, 4.2rem); letter-spacing: -0.025em; }
 .prose-section h3 { margin: 30px 0 10px; font-size: 1.7rem; }
 .prose-section p, .prose-section li { font-size: 0.84rem; }
